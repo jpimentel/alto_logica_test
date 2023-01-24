@@ -6,7 +6,7 @@ class TaxHelper
     ItemTypes::GENERIC => 0.10
   }.freeze
 
-  def self.get_for_type(type)
+  def self.get_percent_for_type(type)
     throw StandardError('Invalid Item type') unless TYPES.include?(type)
     TYPES[type]
   end
